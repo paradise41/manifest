@@ -2,11 +2,13 @@
 <manifest>
 
 <remote  name="ubuntu10"
-    fetch="https://github.com/PixelExperience-Devices"
-    revision="ten" />
+    fetch="https://github.com/LineageOS"
+    revision="17.1" />
 
-<project path="kernel/xiaomi/rosy" name="kernel_xiaomi_rosy" remote="ubuntu10" />
+<project path="device/xiaomi/rosy" name="android_device_xiaomi_rosy" remote="ubuntu10" revision="17.1" />
 
-<project path="vendor/xiaomi/rosy" name="vendor_xiaomi_rosy" remote="ubuntu10" />
+<project path="kernel/xiaomi/rosy" name="android_kernel_xiaomi_rosy" remote="ubuntu10" revision="17.1" />
+
+<project path="vendor/xiaomi/rosy" name="android_device_xiaomi_msm8953-common" remote="ubuntu10" revision="17.1" />
 
 </manifest>
