@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote  name="ubuntu10"
+    fetch="https://github.com/PixelExperience-Devices"
+    revision="ten" />
+
+<project path="kernel/xiaomi/rosy" name="kernel_xiaomi_rosy" remote="ubuntu10" />
+
+<project path="vendor/xiaomi/rosy" name="vendor_xiaomi_rosy" remote="ubuntu10" />
+
+</manifest>
