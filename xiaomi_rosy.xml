@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-<remote  name="ubuntu10"
-    fetch="https://github.com/LineageOS"
-    revision="17.1" />
-
-<project path="devices/xiaomi/rosy" name="android_device_xiaomi_rosy" remote="ubuntu10" revision="17.1" />
-
-<project path="kernel/xiaomi/rosy" name="android_kernel_xiaomi_rosy" remote="ubuntu10" revision="17.1" />
-
-<project path="vendor/xiaomi/rosy" name="android_device_xiaomi_msm8953-common" remote="ubuntu10" revision="17.1" />
-
+	<remote name="tree"
+	            fetch="https://github.com/aragon12/android_device_xiaomi_rosy"
+	            revision="lineage-16.0" />
+	<remote name="vendor"
+	            fetch="https://github.com/aragon12/vendor_xiaomi_rosy"
+	            revision="lineage-16.0" />
+	<remote name="kernel"
+	            fetch="https://github.com/aragon12/android_kernel_xiaomi_msm8953"
+	            revision="lineage-16.0" />
+	
+	<project path="device/xiaomi/rosy" name="android_device_xiaomi_rosy" remote="tree" />
+	<project path="vendor/xiaomi/rosy" name="vendor_xiaomi_rosy" remote="vendor" />
+	<project path="kernel/xiaomi/rosy" name="android_kernel_xiaomi_msm8953" remote="kernel" />
 </manifest>
